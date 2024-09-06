@@ -1134,6 +1134,7 @@ struct IMGUI_API ImGuiInputTextState
     int                     ReloadSelectionStart;   // POSITIONS ARE IN IMWCHAR units *NOT* UTF-8 this is why this is not exposed yet.
     int                     ReloadSelectionEnd;
     float                   WordWrapWidth;
+    bool                    KeepTrailingBlanks;
 
     ImGuiInputTextState()                   { memset(this, 0, sizeof(*this)); }
     void        ClearText()                 { CurLenW = CurLenA = 0; TextW[0] = 0; TextA[0] = 0; CursorClamp(); }

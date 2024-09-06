@@ -5245,7 +5245,6 @@ bool ImGui::InputTextEx(const char* label, const char* hint, char* buf, int buf_
 
     // Render text. We currently only render selection when the widget is active or while scrolling.
     // FIXME: We could remove the '&& render_cursor' to keep rendering selection when inactive.
-    int d_len = 0;
     if (render_cursor || render_selection)
     {
         IM_ASSERT(state != NULL);
